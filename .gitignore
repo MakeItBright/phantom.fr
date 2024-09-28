@@ -1,0 +1,75 @@
+# Exclude .htaccess and .htpasswd files
+/.htaccess
+/.htpasswd
+
+# Exclude various system folders and files from hosting and operating systems
+/cgi-bin/
+/awstats/
+/webstat/
+.DS_Store
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# Exclude all text-based and similar resources
+*.xml
+*.html
+!/docs/index.html
+*.txt
+*.log
+*.css.map
+
+# Exclude archives, including multi-part archives
+*.zip
+*.zip*  
+*.tar
+*.tar*
+*.enc
+*.enc*
+*.gz
+*.gz*
+*.tgz
+*.tgz*
+*.sql
+*.rar
+.hg
+.ftpconfig
+*.doc
+*.docx
+*.pdf
+*.rtf
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.psd
+*.psb
+*.sketch
+core.*
+
+# Exclude robots.txt
+robots.txt
+
+# Exclude Node.js-related files and folders
+node_modules
+bower_components
+vendor
+/.idea/
+/nbproject
+.grunt
+.npm
+.env
+.phpunit.result.cache
+npm-debug.log
+yarn-error.log
+package-lock.json
+.sass-cache/
+.vscode
+docker-volumes-data
+v8-compile-cache-0
+composer.lock
+package-lock.json
+
+# Exclude xhprof logs
+/xhprof/logs
