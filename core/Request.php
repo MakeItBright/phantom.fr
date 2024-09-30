@@ -87,4 +87,28 @@ class Request
     {
         return $_POST[$name] ?? $default;
     }
+
+    /**
+     * Get the request path without the query string.
+     *
+     * @return string The path of the request without query parameters.
+     */
+    public function getPath(): string
+    {
+        return $this->removeQueryString();
+    }
+
+    /**
+     * Remove the query string from the URI and return the path.
+     *
+     * @return string The URI without the query string or an empty string if no URI is present.
+     */
+    protected function removeQueryString(): string
+    {
+        if ($this->uri) {
+            $params = explode("?", $this->uri);
+            return trim($params[0], '/');
+        }
+        return "";
+    }
 }
