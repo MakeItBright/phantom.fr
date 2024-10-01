@@ -4,9 +4,9 @@ namespace App\Controllers;
 
 class HomeController
 {
-    public function test()
+    public function index()
     {
-        return 'Test page';
+      return view('test', ['name' => 'John2', 'age' => 35],'default_dark');
     }
 
     public function contact()

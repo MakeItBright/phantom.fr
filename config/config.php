@@ -7,4 +7,4 @@ const APP = ROOT . '/app';
 const CORE = ROOT . '/core';
 const VIEWS = APP . '/Views';
 const LAYOUT = 'default';
-const PATH = 'https://fr.loc';
+const PATH = 'https://fr.thejb.app/';

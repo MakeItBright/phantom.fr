@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<h1>Default layout</h1>
+<h1>Default Dark layout</h1>
 
 <?= $this->content; ?>
 
